@@ -3,176 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Hong Kong</title>
+    <title>Thai Delicious</title>
     <style>
-        .flex-container {
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            text-align: left; 
-        }
-
-        .text-image-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .image-container img {
-            max-width: 600px;
-            height: auto;
-            display: block;
-        }
-
-        .text-container {
-            max-width: 100%;
-        }
-
-        @keyframes grow {
-            0% { background-size: 100%; }
-            50% { background-size: 110%; }
-            100% { background-size: 100%; }
-        }
-        
-        .parallax {
-            background-image: url('https://www.discoverhongkong.com/content/dam/dhk/intl/explore/attractions/the-charm-of-the-bright-city/the-charm-of-the-bright-city-1920x1080.jpg');
-            min-height: 500px;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .content {
-            padding: 50px;
-            width: 80%;
-            color: black;
-         
-        }
-
-        h1 {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
             text-align: center;
-            font-size: 35px;
+            background-color: #fff8e1;
         }
-
-        p {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 20px;
-          
+        header {
+            background-color: #ff5722;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
         }
-
-        h2 {
-            border-bottom: 2pt solid rgb(0, 0, 0);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 30px;
-            
+        .container {
+            padding: 40px;
         }
-
-        footer {
-            text-align: center;
-            background-color: #c6f4ffc5;
-            padding: 10px;
-            position: relative;
+        .feature {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
-
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; 
-            height: 0;
-            overflow: hidden;
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
+        img {
             width: 100%;
-            height: 100%;
+            max-width: 600px;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="parallax" aria-hidden="true"></div>
-
-    <main class="content">
-        <h1>Thai Delicious!!</h1>
-
-        <section>
-            <h2>About Hong Kong</h2>
-            <p>Where is Hong Kong? Hong Kong is located on the southern coast of China and includes Hong Kong Island, Lantau Island, the Kowloon Peninsula, and the New Territories.</p>
-            <p>Have you ever been to Hong Kong? Hong Kong is an amazing city, and beyond shopping and dining, there is so much to explore. Bustling markets, historic temples, tranquil walking trails, and the most breathtaking views of Victoria Harbour. Travellers can have an unforgettable trip in Hong Kong. Come on, let me show you how to enjoy traveling in Hong Kong!</p>
-        </section>
-
-        <section>
-            <h2>Explore Hong Kong</h2>
-            <div class="text-image-container">
-                <div class="image-container">
-                    <img src="https://www.journeyera.com/wp-content/uploads/2019/12/dragons-back-hike-hong-kong-0430.jpg" alt="Dragon's Back hiking trail">
-                </div>
-                <div class="text-container">
-                    <p>Nature and hiking&#128507;:</p>
-                    <p>Hong Kong is famous for its beautiful natural scenery. Dragon's Back, Thousand Island Lake, and Tai Mo Shan are some of my favorite hiking trails. Not only are they beautiful and relaxing, but they are also conveniently located within 30 minutes by public transport.</p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="flex-container"> 
-                <div class="text-container">
-                    <p>Theme parks&#127906;:</p>
-                    <p>If you are looking for something fun and exciting to do with your children, theme parks such as Disneyland and Ocean Park would be a good choice, each offering a unique mix of entertainment and attractions.</p>
-               
-                </div>
-                <div class="image-container">
-                    <img src="https://media.oceanpark.com.hk/files/s3fs-public/flySwimg.jpg" alt="Ocean Park">
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="text-image-container">
-                <div class="image-container">
-                    <img src="https://images.unsplash.com/photo-1623747912232-a5ba7a3db7de?q=80&w=3240&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Street food" >
-                </div>
-                <div class="text-container">
-                    <p>Local street food&#127841;:</p>
-                    <p>Don't just go to fine dining restaurants. You have to try the most typical street food like egg waffles, fish balls, and bubble tea!</p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="flex-container"> 
-                <div class="text-container">
-                    <p>The night view&#127753;:</p>
-                    <p>To enjoy Hong Kong's iconic night view, Victoria Harbour and the Peak are good places to go. A stroll along the harbour with its most famous landmark and a dinner on the Peak with the city at night will make your trip unforgettable.</p>
-                </div>
-                <div class="image-container">
-                    <img src="https://images.unsplash.com/photo-1577871598838-a543ee47cd79?q=80&w=3866&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Night view of Hong Kong">
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Have a flash visit with Henry Golding now&#128747;</h2>
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/1lcjRj3rWnQ?si=iNQa-5N6Kzqea-NZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-        </section>
-
-        <section>
-            <h2>Additional Information</h2>
-            <p><a href="https://www.accuweather.com/en/hk/hong-kong/1123655/weather-today/1123655">Check out the weather in HK</a></p>
-            <p><a href="https://www.xe.com/currencyconverter/convert/?Amount=1&From=AUD&To=HKD">Check the exchange rate</a></p>
-            <p><a href="https://au.trip.com/">Check the flights</a></p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Vanessa Leung s8092474</p>
-        <p>Contact me <a href="https://www.linkedin.com/in/vanessa-leung-288198188/">here</a>.</p>
-    </footer>
+    <header>Thai Delicious</header>
+    <div class="container">
+        <div class="feature">
+            <h2>🥘 Explore Thai Cuisine</h2>
+            <img src="images/explore-thai-cuisine.jpg" alt="Explore Thai Cuisine">
+            <p>Thai cuisine is known for its bold flavors, fresh ingredients, and balance of sweet, sour, salty, and spicy tastes. Popular dishes include:</p>
+            <ul>
+                <li><strong>Pad Thai:</strong> Stir-fried rice noodles with shrimp, tofu, eggs, and peanuts.</li>
+                <li><strong>Tom Yum Goong:</strong> A spicy and sour shrimp soup infused with lemongrass.</li>
+                <li><strong>Green Curry:</strong> A creamy coconut-based curry with chicken, Thai eggplant, and aromatic spices.</li>
+            </ul>
+        </div>
+        <div class="feature">
+            <h2>📸 Visual Delight</h2>
+            <img src="images/visual-delight.jpg" alt="Delicious Thai Food">
+            <p>Thai cuisine is as visually appealing as it is delicious. Dishes are often decorated with fresh herbs, carved vegetables, and vibrant colors that make them stand out. The combination of textures and colors enhances the dining experience.</p>
+        </div>
+        <div class="feature">
+            <h2>📖 Cultural Insights</h2>
+            <img src="images/cultural-insights.jpg" alt="Cultural Insights">
+            <p>Thai food reflects the country's rich history and diverse influences. Some key cultural insights include:</p>
+            <ul>
+                <li>Traditional Thai meals are served family-style, encouraging sharing and togetherness.</li>
+                <li>Street food is an essential part of Thai culture, offering quick and affordable meals.</li>
+                <li>Many Thai dishes are influenced by Chinese, Indian, and Malay cuisines, creating a unique fusion of flavors.</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
