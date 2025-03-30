@@ -5,29 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thai Delicious</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Parallax effect for the hero image */
+        .parallax {
+            background-image: url('https://images.unsplash.com/photo-1550967960-64994bfba9e4?q=80&w=1962&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            height: 100vh; /* Full height of the viewport */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
 </head>
 <body class="min-h-screen bg-orange-50">
-    <!-- Hero Section -->
-    <div class="relative h-[600px] overflow-hidden">
-        <div class="absolute inset-0">
-            <img 
-                src="https://images.unsplash.com/photo-1550967960-64994bfba9e4?q=80&w=1962&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Thai Food Spread"
-                class="w-full h-full object-cover"
-            />
-            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-        </div>
-        <div class="relative h-full flex items-center justify-center">
-            <div class="text-center text-white px-4">
-                <h1 class="text-5xl md:text-6xl font-bold mb-4">
-                    Thai Delicious
-                </h1>
-                <p class="text-lg md:text-xl max-w-2xl mx-auto">
-                    Experience the perfect harmony of sweet, sour, spicy, and savory flavors
-                </p>
-            </div>
+    <!-- Hero Section with Parallax -->
+    <div class="parallax flex items-center justify-center text-center text-white px-4">
+        <div>
+            <h1 class="text-5xl md:text-6xl font-bold mb-4">
+                Thai Delicious
+            </h1>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto">
+                Experience the perfect harmony of sweet, sour, spicy, and savory flavors
+            </p>
         </div>
     </div>
+
 
     <!-- Introduction -->
     <div class="max-w-3xl mx-auto px-4 py-8 text-center">
